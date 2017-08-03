@@ -1,0 +1,640 @@
+/*======================       ШРИФТЫ       =========================*/
+@font-face {
+    font-family: 'pfdintextcondpromedium';
+    src: url('fonts/pfdintextcondpromedium.eot');
+    src: url('fonts/pfdintextcondpromedium.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondpromedium.woff2') format('woff2'),
+         url('fonts/pfdintextcondpromedium.woff') format('woff'),
+         url('fonts/pfdintextcondpromedium.ttf') format('truetype'),
+         url('fonts/pfdintextcondpromedium.svg#pfdintextcondpromedium') format('svg');
+}
+@font-face {
+    font-family: 'pfdintextcondprobold';
+    src: url('fonts/pfdintextcondprobold.eot');
+    src: url('fonts/pfdintextcondprobold.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondprobold.woff2') format('woff2'),
+         url('fonts/pfdintextcondprobold.woff') format('woff'),
+         url('fonts/pfdintextcondprobold.ttf') format('truetype'),
+         url('fonts/pfdintextcondprobold.svg#pfdintextcondprobold') format('svg');
+}
+@font-face {
+    font-family: 'pfdintextcondprolight';
+    src: url('fonts/pfdintextcondprolight.eot');
+    src: url('fonts/pfdintextcondprolight.eot') format('embedded-opentype'),
+         url('fonts/pfdintextcondprolight.woff2') format('woff2'),
+         url('fonts/pfdintextcondprolight.woff') format('woff'),
+         url('fonts/pfdintextcondprolight.ttf') format('truetype'),
+         url('fonts/pfdintextcondprolight.svg#pfdintextcondprolight') format('svg');
+}
+
+
+.bold{
+	font-family: "PFDinTextCondProBold";
+}
+.medium{
+	font-family: "pfdintextcondpromedium"
+}
+.light{
+	font-family: "pfdintextcondprolight";
+}
+
+/*=================           БАЗОВЫЕ НАСТРОЙКИ           ==============*/
+
+a:focus,
+a:hover,
+a:visited,
+a:active{
+	text-decoration: none;
+}
+
+.section_header h2{
+	text-transform: uppercase
+	color: #666666;
+	.bold;
+}
+button:focus {
+	outline: none;
+
+}
+
+/*=================           ШАПКА             ==============*/
+header{
+	color: #666666;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	.descript {
+		h4 {
+			.medium;
+			text-transform: uppercase;
+		}
+		h5{
+			.light;
+			font-size: 15px;
+		}
+	}
+
+	.phone_number {
+		text-align: right;
+		h3 {
+			margin-top: 7px;
+		}
+		a{
+			font-size: 25px;
+			display: inline-block;;
+			.medium;
+			color: #666666;
+			&:hover{
+				text-decoration: none;
+			}
+			&:before {
+				content: '';
+				width: 32px;
+				height: 32px;
+				background: url(../img/phone_icon.png) no-repeat center center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+
+/*=================           НАВИГАЦИЯ             ==============*/
+
+nav{
+	background-color: #fafdfa;
+	ul.list-inline a {
+		display: inline-block;
+		text-transform: uppercase;
+		padding: 20px 10px 10px;
+		color: #666666;
+		.light;
+			-moz-transition: all 0.1s 0.02s ease;
+	 		-o-transition: all 0.1s 0.02s ease;
+	 		-webkit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			text-decoration: none;
+			background: #67cc67;
+			color: #fff;
+		}
+	}
+
+	ul.list-inline {
+		margin-bottom: 0px;
+	}
+}
+
+/*=================           ГЛАВНЫЙ ЭКРАН             ==============*/
+
+section#main{
+	background: url(../img/main_bg_1920.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	.main_header{
+		h1{
+			margin-top: 100px;
+			margin-bottom: 90px;
+			.bold;
+			color: #fff;
+			text-transform: uppercase;
+			span {
+				background-color: #67cc67;
+				padding: 5px;
+			}
+
+		}
+	}
+
+	h3{
+		.bold;
+		text-transform: uppercase;
+		color: #666666;
+		span{
+			color: #ff9933;
+		}
+	}
+
+	.buttons{
+		margin-top: 7px;
+		margin-bottom: 100px;
+		button#measurer {
+			.bold;
+			font-size: 20px;
+			text-transform: uppercase;
+			border: none;
+			background-color: #ff9933;
+			padding: 17px 35px;
+			color: #fff;
+			&:hover {
+				background-color: #d67513;
+			}
+		}
+
+		button#get_types {
+			border: none;
+			background-color: transparent;
+			padding: 17px 35px;
+			color: #ff9933;
+			.bold;
+			text-transform: uppercase;
+			font-size: 20px;
+			border: 2px solid #ff9933;
+			margin-left: 20px;
+			&:hover{
+				background-color: rgba(255, 255, 255, 0.8);
+				
+			}
+		}
+
+	}
+
+
+}
+
+
+/*=================           ВИДЫ ЖАЛЮЗИ             ==============*/
+
+section#types{
+	color: #666666;
+	padding-top: 50px;
+	.section_header {
+		padding-bottom: 10px;
+	}
+	h4 {
+		text-transform: uppercase;
+		.medium;
+		margin-top: 25px;
+	}
+	button.more_btn {
+		border: none;
+		color: #66cc66;
+		padding: 10px 27px;
+		text-transform: uppercase
+		.bold;
+		border: 2px solid #66cc66;
+		background-color: transparent;
+			-moz-transition: all 0.1s 0.02s ease;
+	 		-o-transition: all 0.1s 0.02s ease;
+	 		-webkit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			background-color: #66cc66;
+			color: #fff;
+		}
+
+	}
+	button.offer_btn {
+		border: none;
+		color: #fff;
+		padding: 10px 27px;
+		text-transform: uppercase
+		.bold;
+		border: 2px solid #66cc66;
+		background-color: #66cc66;
+			-moz-transition: all 0.1s 0.02s ease;
+	 		-o-transition: all 0.1s 0.02s ease;
+	 		-webkit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			background-color: transparent;
+			color: #66cc66;
+		}
+	}
+
+	.card {
+		padding: 5px;
+		border: 2px solid transparent;
+
+			-moz-transition: all 0.1s 0.02s ease;
+	 		-o-transition: all 0.1s 0.02s ease;
+	 		-webkit-transition: all 0.1s 0.02s ease;
+		&:hover {
+			background-color: #fafdfa;
+			border: 2px solid #b2e5b2;
+		}
+	}
+	
+}
+
+/*=================           БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ            ==============*/
+
+section#help {
+	padding-top: 65px;
+	padding-bottom: 50px;
+	h3 {
+		color: #ff9933;
+		text-transform: uppercase;
+		.bold;
+	}
+	p {
+		color: #666666;
+		.light;
+		font-size: 18px;
+	}
+
+	img {
+		margin-top: 25px;
+	}
+	button#free_consult {
+		.bold;
+		text-transform: uppercase;
+		border: none;
+		background-color: transparent;
+		color: #ff9933;
+		border: 2px solid #ff9933;
+		padding: 15px 35px;
+		&:hover {
+			background-color: #ff9933;
+			color: #fff;
+		}
+	}
+
+}
+
+
+/*=================           АКЦИЯ            ==============*/
+
+section#offer {
+	padding-top: 50px;
+	h4 {
+		.bold;
+		text-transform: uppercase;
+		color: #ff9933;
+
+	}
+	h3 {
+		text-transform: uppercase;
+		color: #ff9933;
+		.bold;
+	}
+	p {
+		.light;
+		color: #666666;
+		font-size: 22px;
+	}
+	input[name="name"] {
+		background: url(../img/name_input.png) no-repeat center left 5px;
+		padding: 25px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		padding-left: 30px;
+		.light;
+		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+			
+		
+	}
+
+	input[name="phone"] {
+		background: url(../img/phone_input.png) no-repeat center left 5px;
+		padding: 25px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		padding-left: 30px;
+		.light;
+		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+			
+		
+	}
+	input[type="submit"] {
+		background-color: #ff9933;
+		color: #fff;
+		border: 1px solid #ff9933;
+		padding: 14px 25px;
+
+	}
+
+
+}
+
+/*=================           ОТЗЫВЫ            ==============*/
+
+section#feedback {
+	padding-bottom: 50px;
+	.section_header {
+		margin-bottom: 50px;
+	}
+
+	.item {
+		background-color: #f8f8f8;
+		padding: 20px;
+		height: 350px;
+
+		h5 {
+			.medium;
+			color: #666666;
+			font-size: 20px;
+			margin-top: 25px;
+		}
+		a {
+			.medium;
+			font-size: 18px;
+
+		}
+		p {
+			margin-top: 30px;
+			.light;
+			font-size: 17px;
+		}
+	}
+	.carousel-indicators {
+		bottom: -50px;
+
+	}
+	.carousel-indicators .active {
+		background-color: #ff9933;
+	}
+	.carousel-indicators li {
+		border: solid 1px #ff9933;
+	}
+	.audio {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+}
+
+
+/*=================           ФУТЕР           ==============*/
+
+footer {
+
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: #666666;
+	color: #fff;
+	h2 {
+		.bold;
+		text-transform: uppercase;
+		color: #fff;
+		margin-left: -15px;
+	}
+	address{
+		p#address {
+			margin-top: 10px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			.light;
+			&:before {
+				content: '';
+				width: 13px;
+				height: 13px;
+				background: url(../img/map_marker.png) no-repeat center center;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 3px;
+			}
+		}
+	}
+	p#kazan {
+		font-size: 20px;
+		.light;
+		margin-top: 0;
+	}
+
+
+	p#phone_footer {
+
+		margin-bottom: 0;
+				text-transform: uppercase;
+				.light;
+				&:before {
+					content: '';
+					width: 13px;
+					height: 13px;
+					background: url(../img/phone_marker.png) no-repeat center center;
+					display: inline-block;
+					vertical-align: middle;
+					margin-bottom: 3px;
+				}
+
+	}
+
+	p#number {
+			font-size: 20px;
+			.light;
+			margin-top: 0;
+		}
+		.social {
+			margin-top: 20px;
+		}
+		.social_icon {
+			display: inline-block;
+			background-color: #ccc;
+			padding: 8px;
+			padding-left: 9px;
+			border-radius: 50%;
+			text-align: center;
+			width: 37px;
+			height: 37px;
+			margin-right: 5xp;
+			&:hover {
+				background-color: #fff;
+			
+			}
+		}
+
+		button#get_answer {
+			margin-left: 10px;
+			background-color: transparent;
+			padding: 7px 35px;
+			color: #fff;
+			border: 2px solid #fff;
+			.bold;
+			&:hover {
+				background-color: #fff;
+				color: #666666;
+			}
+
+		}
+		.details_row {
+			margin-top:  30px;
+			}
+		.details {
+			h5 {
+				.medium;
+				font-size: 20px;
+			}
+			p {
+				text-transform: uppercase;
+				.light;
+			}
+		}
+		.policy {
+			text-align: center;
+			a {
+				color: #fff;
+				border-bottom: 1px dashed #fff;
+			}
+		}
+		.siraziev {
+			text-align: right;
+			h4 {
+				.bold;
+				text-transform: uppercase;
+			}
+			a {
+				color: #fff;
+				.bold;
+				font-size: 18px;
+			}
+		}
+	}
+
+
+
+/*=================           ВСПЛЫВАЮЩИЕ ОКНА             ==============*/
+
+.modal-dialog {
+	margin-top: 10%;
+	
+}
+.big_modal {
+	width: 40%;
+}
+.header_modal {
+	h4 {
+		text-transform: uppercase;;
+		color: #666666;
+		.bold;
+		text-align: center;
+		padding: 15px;
+	}
+}
+.modal-header {
+	margin-top: -50px;
+	border-bottom: none;
+	.close {
+		text-shadow : none;
+		color: #fff;
+		opacity: 0.9;
+	}
+}
+.modal-content {
+	border-radius: 0;
+
+	input[name="name"] {
+		margin-top: 15px;
+		background: url(../img/name_input.png) no-repeat center left 5px;
+		padding: 25px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		padding-left: 30px;
+		.light;
+		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+			
+		
+	}
+
+	input[name="phone"] {
+		margin-top: 15px;
+		background: url(../img/phone_input.png) no-repeat center left 5px;
+		padding: 25px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		padding-left: 30px;
+		.light;
+		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+			
+		
+	}
+	textarea{
+		width: 100%;
+		margin-top: 15px;		
+		padding: 25px;
+		border-radius: 0;
+		border: solid 1px #cccccc;
+		padding-left: 30px;
+		.light;
+		opacity: 0.6;
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+
+	}
+	input[type="submit"] {
+		margin-top: 15px;
+		background-color: #ff9933;
+		color: #fff;
+		border: 1px solid #ff9933;
+		border-bottom: 2px solid #ff9933;
+		padding: 14px 35px;
+		text-transform: uppercase;
+		width: 100%;
+		.bold;
+		&:hover {
+			background-color: #fc8b1a;;
+		}
+
+	}
+}
+
+.header_modal_info {
+	h4 {
+		text-transform: uppercase;;
+		color: #666666;
+		.bold;
+	}
+	p {
+		.light;
+		font-size: 18px;
+	}
+}
+
+
+
